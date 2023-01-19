@@ -88,17 +88,12 @@ class App:
             self.turn(ant)
             ant.move_forward()
 
-
-
-
     def draw(self) -> None:
         for ant in self.ants:
             if self.grid[ant.x][ant.y]:
                 pyxel.pset(ant.x, ant.y, self.bg)
             else:
                 pyxel.pset(ant.x, ant.y, self.fg)
-
-
 
 
 if __name__ == '__main__':
