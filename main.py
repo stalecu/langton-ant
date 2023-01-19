@@ -17,7 +17,7 @@ HEIGHT = 640 // SCALE
 
 
 class Ant:
-    def __init__(self, x = 0, y = 0, direction = Direction.UP):
+    def __init__(self, x=0, y=0, direction=Direction.Up):
         self.x = x
         self.y = y
         self.dir = direction
