@@ -33,14 +33,8 @@ class Ant:
             case Direction.Right:
                 self.x += 1
 
-        if self.x > WIDTH - 1:
-            self.x = 0
-        elif self.x < 0:
-            self.x = WIDTH - 1
-        elif self.y > HEIGHT - 1:
-            self.y = 0
-        elif self.y < 0:
-            self.y = HEIGHT - 1
+        self.x = self.x % WIDTH
+        self.y = self.y % HEIGHT
 
     def turn_right(self):
         self.dir += 1
